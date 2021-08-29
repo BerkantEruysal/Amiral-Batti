@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <div class="main-content">
+            <div class="welcome-page" id="welcome-page">
+                <h1>Battleship</h1>
+                <button id="start-game-btn">Start Game</button>
+            </div>
+            <div class="game-page hidden" id="game-page">
+                <div class="map" id="map">
+                    <div class="grids" id="enemy-grids"></div>
+                    <div class="grids" id="player-grids"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="den"></div>
     
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>

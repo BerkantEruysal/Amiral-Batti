@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.hidden{
+    position: absolute;
+    display: none;
+}
+.main-content {
+}
+.welcome-page {
+  margin-top: 25vh;
+  text-align: center;
+}
+.welcome-page button{
+    width: 150px;
+    height: 45px;
+    margin-top: 15px;
+}
+.welcome-page h1{
+    font-size: 5em;
+    padding-bottom: 15vh;
+}
+.grid{
+  box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.enemy-grid:hover{
+ border: 3px solid gold;
+}
+.grids{
+  display: grid;
+  grid-template-columns: repeat(20 , 1fr);
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+}
+.friendly-ship{
+  background-color: greenyellow;
+}
+.enemy-ship{
+  background-color: red;
+}
+
+.missed{
+  background-color: rgb(231, 224, 224);
+  color: rgb(83, 25, 25);
+
+}
+.sunk-friendly-ship{
+  background-color: royalblue;
+}
+.sunk-enemy-ship{
+  background-color: salmon;
+}
+.damaged-friendly-ship{
+  background-color: seashell;
+}
+.damaged-enemy-ship{
+  background-color: slateblue;
+}
