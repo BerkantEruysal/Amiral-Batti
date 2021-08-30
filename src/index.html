@@ -13,17 +13,37 @@
             <div class="welcome-page" id="welcome-page">
                 <h1>Battleship</h1>
                 <button id="start-game-btn">Start Game</button>
+                <div class="how-to-play">
+                    <h3>How to play</h3>
+                <ol>
+                    <li>There is two 20 x 5 grid on this game. Bottom one represents your map , and the other ona represents the enemy</li>
+                    <li>The main point is to shot all of the enemy ships that are hiding in enemy area </li>
+                    <li>You can see your own ships on the map. Your ships are green ones.</li>
+                    <li>You can't see your enemy's ships. So you must guess when you are shooting.</li>
+                    <li>When your shoot hits the enemy ship, the square will be displayed in red</li>
+                    <li>When you hit all parts of a ship, the ship will sink and display in dark red</li>
+                    <li>Your damaged and sunk ships will take color related to their situation as well as enemy's ships</li>
+                    <li>If you manage to destroy all of the enemy ships , you will win. Otherwise you will lost.</li>
+                </ol>
+                </div>
+                
             </div>
             <div class="game-page hidden" id="game-page">
                 <div class="map" id="map">
+                    <H1>Enemy's Map</H1>
                     <div class="grids" id="enemy-grids"></div>
                     <div class="grids" id="player-grids"></div>
+                    <h1>Your Map</h1>
                 </div>
+            </div>
+            <div class="game-end-page hidden" id="game-end-page">
+                <h1 id="game-end-header">Game Over</h1>
+                <button id="play-again-btn">Play Again</button>
             </div>
         </div>
     </div>
     <div id="den"></div>
-    
+    <footer><a href="https://github.com/BerkantEruysal">My Github</a></footer>
     <script src="./index.js" type="module"></script>
 </body>
 </html>
